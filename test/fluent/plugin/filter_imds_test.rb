@@ -1,6 +1,6 @@
-require "test_helper"
+require "helper"
 
-class Fluent::Plugin::FilterImdsTest < Minitest::Test
+class Fluent::Plugin::FilterImdsTest < Test::Unit::TestCase
   def test_that_it_has_a_version_number
     refute_nil ::Fluent::Plugin::FilterImds::VERSION
   end
