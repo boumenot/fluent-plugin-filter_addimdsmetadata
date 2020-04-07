@@ -1,11 +1,11 @@
-require 'fluent/filter'
+require "fluent/plugin/filter_imds/version"
+require 'fluent/plugin/filter'
 require 'socket'
 require 'net/http'
 require 'uri'
 
 module Fluent
   class IMDSFilter < Filter
-    # Register this filter as "passthru"
     Fluent::Plugin.register_filter('imds', self)
 
     # config_param works like other plugins
